@@ -1,0 +1,7 @@
+{
+    "For Loop": {
+      "prefix": ["\\version"],
+      "body": ["\\version ${1:version}"],
+      "description": "Specify the lilypond version"
+    }
+  }

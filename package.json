@@ -1,0 +1,30 @@
+{
+    "name": "lilypond-workshop",
+    "displayName": "lilypond-workshop",
+    "description": "A lilypond music notation extension",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lilypond",
+            "aliases": ["LilyPond", "lilypond"],
+            "extensions": [".ily",".ly"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lilypond",
+            "scopeName": "source.ily",
+            "path": "./syntaxes/lilypond.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "lilypond",
+            "path": "./snippets/lilypond.json"
+        }]
+    }
+}
