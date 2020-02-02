@@ -1,7 +1,17 @@
 {
-    "For Loop": {
+    "\\version": {
       "prefix": ["\\version"],
       "body": ["\\version ${1:version}"],
       "description": "Specify the lilypond version"
+    },
+    "\\score":{
+        "prefix" : ["\\score"],
+        "body":["\\score{","    $1", "}"],
+        "description" : "Start a new score"
+    },
+    "\\relative" : {
+        "prefix" : ["\\relative"],
+        "body" : ["\\relative ${1:reference}"],
+        "description" : "relative"
     }
   }
